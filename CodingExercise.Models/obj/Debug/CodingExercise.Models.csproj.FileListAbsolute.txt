@@ -1,0 +1,5 @@
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Models/bin/CodingExercise.Models.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Models/bin/CodingExercise.Models.pdb
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Models/obj/Debug/CodingExercise.Models.csproj.CoreCompileInputs.cache
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Models/obj/Debug/CodingExercise.Models.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Models/obj/Debug/CodingExercise.Models.pdb

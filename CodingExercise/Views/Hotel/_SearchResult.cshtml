@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CodingExercise.Models.ViewModels.Hotel>
+
+
+<div class="row">
+    <table class="table table-striped" border="1">
+        <thead>
+            <tr>
+                <th>Hotel Name</th>
+                <th>Price</th>
+                <th>Destination City</th>
+                <th>Region Id</th>
+                <th>LengthOfStay</th>
+                <th>StarRating</th>
+                <th>GuestRating</th>
+         
+            </tr>
+        </thead>
+        <tbody>
+            @{//check count
+                if(this.Model != null)
+                {
+                    //if(Model.Hotels.Count() >0)
+                    //{
+                        foreach (var item in this.Model)
+                        {
+                            <tr>
+                                <td>@item.HotelName</td>
+                                <td>@item.price</td>
+                                <td>@item.DestinationCity</td>
+                                <td>@item.RegionId</td>
+                                <td>@item.LengthOfStay</td>
+                                <td>@item.StarRating</td>
+                                <td>@item.GuestRating</td>
+                        
+                    
+                            </tr>
+                        }
+                    //}
+                }
+            }
+        </tbody>
+    </table>
+  
+</div>
+
+
+

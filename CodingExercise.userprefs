@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{26A7F876-5AD6-486A-B0C9-677DA08C57AB}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodingExercise/Views/Hotel/Index.cshtml">
+    <Files>
+      <File FileName="CodingExercise/Views/Hotel/Index.cshtml" Line="8" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/daliaabufarha/Projects/CodingExercise/CodingExercise/Controllers/testController.cs" relfile="CodingExercise/Controllers/testController.cs" line="17" column="1" />
+      <Breakpoint file="/Users/daliaabufarha/Projects/CodingExercise/CodingExercise/Views/Hotel/aa.cshtml" relfile="CodingExercise/Views/Hotel/aa.cshtml" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CodingExercise.Web PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

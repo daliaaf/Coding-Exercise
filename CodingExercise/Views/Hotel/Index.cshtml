@@ -1,0 +1,106 @@
+﻿@model CodingExercise.Models.SearchViewModel
+
+@{
+    ViewBag.Title = "Hotel Search Criteria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+   
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(document).ready(function () {
+     $(".form_datetime").datepicker({format: 'yyyy-mm-dd'});
+  });
+</script>
+<div class="row">
+ 
+  <fieldset>
+         <legend>Hotel Search Criteria</legend>
+            @using (Html.BeginForm("Index", "Hotel", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+
+
+ <div class="col-md-10">
+          @Html.LabelFor(m => m.SearchCriteria.destinationName , new { @class = "form-control" })
+          @Html.TextBoxFor(m => m.SearchCriteria.destinationName, new { @class = "form-control", @placeholder = "new york" })
+    </div>
+ <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.destinationCity , new { @class = "form-control" })
+          @Html.TextBoxFor(m => m.SearchCriteria.destinationCity, new { @class = "form-control", @placeholder = "new york" })
+              </div>
+ <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.RegionIds , new { @class = "form-control" })
+          @Html.TextBoxFor(m => m.SearchCriteria.RegionIds, new { @class = "form-control", @placeholder = "178286,178294" })
+
+           @Html.ValidationMessageFor(m => m.SearchCriteria.RegionIds, "", new { @class = "text-danger" })
+     </div>    
+ <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.minTripStartDate , new { @id = "form-control" })    
+
+        @Html.EditorFor(m => m.SearchCriteria.minTripStartDate,new { htmlAttributes = new { @class = "form_datetime" } })
+    
+            </div>
+
+             <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.maxTripStartDate , new { @id = "form-control" })      
+      @Html.EditorFor(m => m.SearchCriteria.maxTripStartDate,new { htmlAttributes = new { @class = "form_datetime" } })
+            </div>
+
+
+ <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.LengthOfStay , new { @class = "form-control" })
+          @Html.TextBoxFor(m => m.SearchCriteria.LengthOfStay, new { @class = "form-control", @placeholder = "3" })
+
+          @Html.ValidationMessageFor(m => m.SearchCriteria.LengthOfStay, "", new { @class = "text-danger" })
+
+     </div> 
+
+      <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.MinStarRating , new { @class = "form-control" })
+          @Html.EditorFor(m => m.SearchCriteria.MinStarRating, new { htmlAttributes = new { @type = "number", @min = "1", @max="5",@step = "0.5" , @placeholder = "2.5",@class = "form-control"}})
+
+           @Html.ValidationMessageFor(m => m.SearchCriteria.MinStarRating, "", new { @class = "text-danger" })
+     </div> 
+
+      <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.MaxStarRating , new { @class = "form-control" })
+
+           @Html.EditorFor(m => m.SearchCriteria.MaxStarRating, new { htmlAttributes = new { @type = "number", @min = "1", @max="5",@step = "0.5" , @placeholder = "2.5",@class = "form-control"}})
+           @Html.ValidationMessageFor(m => m.SearchCriteria.MaxStarRating, "", new { @class = "text-danger" })
+     </div> 
+      <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.MinGuestRating , new { @class = "form-control" })
+      
+            @Html.EditorFor(m => m.SearchCriteria.MinGuestRating, new { htmlAttributes = new { @type = "number", @min = "1", @max="5",@step = "0.1" , @placeholder = "2.8",@class = "form-control"}})
+
+           @Html.ValidationMessageFor(m => m.SearchCriteria.MinGuestRating, "", new { @class = "text-danger" })
+     </div> 
+      <div class="col-md-10">
+         @Html.LabelFor(m => m.SearchCriteria.MaxGuestRating , new { @class = "form-control" })
+        
+           @Html.EditorFor(m => m.SearchCriteria.MaxGuestRating, new { htmlAttributes = new { @type = "number", @min = "1", @max="5",@step = "0.1" , @placeholder = "2.8",@class = "form-control"}})
+
+           @Html.ValidationMessageFor(m => m.SearchCriteria.MaxGuestRating, "", new { @class = "text-danger" })
+     </div> 
+
+    <input type = "submit" value="Search">
+    }
+
+
+      <hr/>
+
+          </fieldset>
+</div>
+
+</br>
+
+@Html.Partial("~/Views/Hotel/_SearchResult.cshtml", Model.Hotels)
+
+
+
+
+    

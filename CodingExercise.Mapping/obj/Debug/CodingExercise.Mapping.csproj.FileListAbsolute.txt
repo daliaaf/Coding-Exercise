@@ -1,0 +1,10 @@
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/obj/Debug/CodingExercise.Mapping.csprojResolveAssemblyReference.cache
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/obj/Debug/CodingExercise.Mapping.csproj.CoreCompileInputs.cache
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/CodingExercise.Mapping.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/CodingExercise.Mapping.pdb
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/AutoMapper.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/CodingExercise.Models.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/CodingExercise.Models.pdb
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/bin/AutoMapper.xml
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/obj/Debug/CodingExercise.Mapping.dll
+/Users/daliaabufarha/Projects/CodingExercise/CodingExercise.Mapping/obj/Debug/CodingExercise.Mapping.pdb
